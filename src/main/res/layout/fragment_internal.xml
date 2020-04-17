@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InternalFrag"
+    android:background="@drawable/gradient">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/rl1"
+      android:background="@drawable/gradient">
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="INTERNAL STORAGE"
+          android:textSize="25dp"
+          android:textStyle="italic|bold"
+          android:textColor="#FFFFFF"
+          android:background="#FF9800"
+          android:singleLine="true"
+          android:marqueeRepeatLimit="marquee_forever"
+          android:ellipsize="marquee"
+          android:textAlignment="center"
+          android:layout_marginTop="25dp"
+          android:id="@+id/tv1"></TextView>
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="120dp"
+          android:textStyle="bold"
+          android:textAlignment="center"
+          android:hint="Enter the text you wnat to enter in the file"
+          android:layout_below="@+id/tv1"
+          android:layout_marginTop="75dp"
+          android:background="#FFFFFF"
+          android:textSize="20dp"
+          android:id="@+id/ed1"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"></EditText>
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/ed1"
+          android:layout_marginTop="70dp"
+          android:text="Save"
+          android:textSize="25dp"
+          android:textStyle="bold"
+          android:background="#FF9800"
+          android:textColor="#FFFFFF"
+          android:id="@+id/b1"></Button>
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/b1"
+          android:layout_marginTop="30dp"
+          android:text="load file"
+          android:textSize="25dp"
+          android:textStyle="bold"
+          android:background="#FF9800"
+          android:textColor="#FFFFFF"
+          android:id="@+id/b2"></Button>
+
+
+  </RelativeLayout>
+
+
+
+
+</FrameLayout>
